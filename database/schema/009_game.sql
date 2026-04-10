@@ -1,6 +1,7 @@
 -- +goose Up
 
-CREATE TABLE app."Game" (
+CREATE TABLE app."Game"
+(
 	"GameId" integer NOT NULL,
 	"Name" text NOT NULL,
 	"Developer" text NOT NULL,

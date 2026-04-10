@@ -3,8 +3,10 @@ import './app.css';
 
 import logo from './assets/images/logo-universal.png';
 import {Greet} from '../wailsjs/go/main/App';
+import {Close} from '../wailsjs/go/main/App';
 
 document.querySelector('#app').innerHTML = `
+    <button class="close-btn" onclick="window.close()">X</button>
     <img id="logo" class="logo">
       <div class="result" id="result">Please enter your name below 👇</div>
       <div class="input-box" id="input">
@@ -41,3 +43,11 @@ window.greet = function () {
         console.error(err);
     }
 };
+
+window.close = function () {
+    try {
+        Close();
+    } catch (err) {
+        console.error(err);
+    }
+}

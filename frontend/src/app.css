@@ -52,3 +52,22 @@
     border: none;
     background-color: rgba(255, 255, 255, 1);
 }
+
+.close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    border-radius: 50%;
+    border: none;
+    background-color: #565656;
+    color: white;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.close-btn:hover {
+    background-color: #ff5522;
+}
