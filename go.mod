@@ -1,4 +1,4 @@
-module testWails
+module GamesAppGo
 
 go 1.23
 

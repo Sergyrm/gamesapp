@@ -60,6 +60,7 @@
     width: 30px;
     height: 30px;
     line-height: 30px;
+    border-radius: 50%;
     border: none;
     background-color: #565656;
     color: white;
@@ -68,5 +69,5 @@
 }
 
 .close-btn:hover {
-    background-color: #ff4d4d;
+    background-color: #ff5522;
 }

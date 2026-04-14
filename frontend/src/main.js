@@ -6,7 +6,7 @@ import {Greet} from '../wailsjs/go/main/App';
 import {Close} from '../wailsjs/go/main/App';
 
 document.querySelector('#app').innerHTML = `
-    <button class="close-btn" onclick="closeWindow()">X</button>
+    <button class="close-btn" onclick="window.close()">X</button>
     <img id="logo" class="logo">
       <div class="result" id="result">Please enter your name below 👇</div>
       <div class="input-box" id="input">
@@ -44,8 +44,10 @@ window.greet = function () {
     }
 };
 
-// Setup the close function
-window.closeWindow = function () {
-    console.log("Closing button clicked");
-    Close();
-};
+window.close = function () {
+    try {
+        Close();
+    } catch (err) {
+        console.error(err);
+    }
+}
