@@ -3,20 +3,20 @@ package main
 import (
 	"fmt"
 
-	"GamesAppGo/backend/models"
+	"github.com/Sergyrm/gamesapp/backend/models"
 )
 
-func main () {
-	myDate := models.Date {
-		Year: 2026,
+func main() {
+	myDate := models.Date{
+		Year:  2026,
 		Month: 3,
-		Day: 27,
+		Day:   27,
 	}
 
-	otherDate := models.Date {
-		Year: 2026,
+	otherDate := models.Date{
+		Year:  2026,
 		Month: 1,
-		Day: 27,
+		Day:   27,
 	}
 
 	fmt.Println(myDate.DateFormat())

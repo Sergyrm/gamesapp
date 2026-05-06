@@ -1,4 +1,4 @@
-module GamesAppGo
+module github.com/Sergyrm/gamesapp
 
 go 1.23
 
